@@ -29,28 +29,6 @@ A simple command-line calculator built with Go (Golang) that supports basic arit
 	•	View the result.
 	•	Decide whether to perform another calculation or exit.
 
-Example Interaction 🖥️
-Welcome to the calculator!\n
-Enter the first number:\n
-10\n
-Enter the second number:\n
-5\n
-Choose an operation (+, -, *, /):\n
-+\n
-Result: 10.00 + 5.00 = 15.00\n
-Would you like to perform another operation? (yes to continue, no to exit):\n
-yes\n
-Enter the first number:\n
-20\n
-Enter the second number:\n
-0\n
-Choose an operation (+, -, *, /):\n
-/\n
-Error: Division by zero is not allowed.\n
-Would you like to perform another operation? (yes to continue, no to exit):\n
-no\n
-Thank you for using the calculator. Goodbye!\n
-
 
 Project Structure 🗂️
 	•	main.go: The main file containing the CLI calculator logic.
