@@ -21,21 +21,19 @@ func main () {
 		fmt.Scan(&second)
 		fmt.Println("Choose an operation (+, -, *, /):")
 		fmt.Scan(&symbol)
-		if symbol == "+" {
-			result = first + second
-			fmt.Println("Result:", first, symbol, second, "=", result)
-		} else if symbol == "-" {
-			result = first - second
-			fmt.Println("Result:", first, symbol, second, "=", result)
-		} else if symbol == "*" {
-			result = first * second
-			fmt.Println("Result:", first, symbol, second, "=", result)
-		} else if symbol == "/" {
-			result = first / second
-			fmt.Println("Result:", first, symbol, second, "=", result)
-		} else {
-			fmt.Println("Вы ввели неизвестный символ")
+		switch symbol {
+			case "+":
+				result = first + second
+			case "-":
+				result = first - second
+			case "*":
+				result = first * second
+			case "/":
+				result = first / second
+			default:
+				fmt.Println("Unknown operations")
 		}
+		fmt.Println("Result:", first, symbol, second, "=", result)
 		fmt.Println("Would you like to perform another operation? (yes to continue, no to exit):")
 		fmt.Scan(&answer)
 		if answer == "yes" {
